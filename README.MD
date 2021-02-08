@@ -1,6 +1,6 @@
 ## **Calculadora WindowsForm para cálculos diversos ** :cowboy_hat_face::desktop_computer:
 
-![Screen](C:\Users\vini-\Desktop\Screenshot_1.png)
+![Screen](https://user-images.githubusercontent.com/45276630/107169543-e43dc480-699c-11eb-830f-ead892430d37.png)
 
 
 
@@ -41,7 +41,7 @@
 
 > a vida está cheia de desafios que, se aproveitados de forma criativa, transformam-se em oportunidades.
 
-### Desenvolvido Por [Vinicius Antônio](www.linkedin.com/in/vinicius-antônio-lima-da-silva-b54614171).
+### Desenvolvido Por [Vinicius Antônio](https://www.linkedin.com/in/vinicius-antônio-lima-da-silva-b54614171/).
 
 
 
