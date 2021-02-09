@@ -12,14 +12,25 @@ namespace ModernCalculator
 {
     public partial class Calculator : Form
     {
+        
+
 
         string operador;
         double a = 0;
         bool validar = false;
+    
+
+
+
         public Calculator()
         {
             InitializeComponent();
         }
+
+        
+
+
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -51,13 +62,17 @@ namespace ModernCalculator
 
         }
 
-        private void lbValorDigitado_Click(object sender, EventArgs e)
+        
+
+
+            private void lbValorDigitado_Click(object sender, EventArgs e)
         {
 
         }
 
         private void btnNumerador_click(object sender, EventArgs e)
         {
+            
             Button bt = (Button)sender;
             txtValorDigitado.Text = txtValorDigitado.Text + bt.Text;
         }
@@ -174,15 +189,13 @@ namespace ModernCalculator
                 label3.Text = label3.Text + txtValorDigitado.Text + "=";
                 txtValorDigitado.Text = Convert.ToString(a / Convert.ToSingle(txtValorDigitado.Text));
             }
+           
 
             label3.Text = "";
             
         }
 
-        private void txtValorDigitado_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -197,17 +210,89 @@ namespace ModernCalculator
 
         private void btnRaiz_click(object sender, EventArgs e)
         {
-
+            Convert.ToString(txtValorDigitado.Text);
+            double Valor_Raiz = Math.Sqrt(Convert.ToDouble(txtValorDigitado.Text));
+            label3.Text = "√" + "(" + txtValorDigitado.Text + ")" + " = ";
+            txtValorDigitado.Text = Convert.ToString(Valor_Raiz);
         }
 
         private void btnRD_click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void btnSen_click(object sender, EventArgs e)
         {
+            Convert.ToString(txtValorDigitado.Text);
+            a = Math.Sin(Convert.ToDouble(txtValorDigitado.Text));
+            label3.Text = txtValorDigitado.Text + " Sen ";
+        
+            txtValorDigitado.Text = a.ToString("N12");
 
+        }
+
+        
+
+        private void txtValorDigitado_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Calculator_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        
+
+        private void Del_Click(object sender, EventArgs e)
+        {
+            if (txtValorDigitado.Text.Length <= 1)
+            {
+                txtValorDigitado.Text = "";
+            }
+            else
+            {
+                txtValorDigitado.Text = txtValorDigitado.Text.Substring(0, txtValorDigitado.Text.Length - 1);
+            }
+        }
+
+        private void btnCos_Click(object sender, EventArgs e)
+        {
+            Convert.ToString(txtValorDigitado.Text);
+            a = Math.Cos(Convert.ToDouble(txtValorDigitado.Text));
+            label3.Text = txtValorDigitado.Text + " Cos ";
+            txtValorDigitado.Text = a.ToString("N12");
+
+        }
+
+        private void btn_tang_Click(object sender, EventArgs e)
+        {
+            Convert.ToString(txtValorDigitado.Text);
+            a = Math.Tan(Convert.ToDouble(txtValorDigitado.Text));
+            label3.Text = txtValorDigitado.Text + " Tan ";
+            txtValorDigitado.Text = a.ToString("N12");
+
+        }
+
+        private void min_click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void max_click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void fechar_click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

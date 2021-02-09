@@ -20,17 +20,18 @@ namespace ModernCalculator
             }
             base.Dispose(disposing);
         }
+       
 
-        #region Código gerado pelo Windows Form Designer
+            #region Código gerado pelo Windows Form Designer
 
-        /// <summary>
-        /// Método necessário para suporte ao Designer - não modifique 
-        /// o conteúdo deste método com o editor de código.
-        /// </summary>
-        private void InitializeComponent()
+            /// <summary>
+            /// Método necessário para suporte ao Designer - não modifique 
+            /// o conteúdo deste método com o editor de código.
+            /// </summary>
+            private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calculator));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn1 = new System.Windows.Forms.Button();
             this.btnSub = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
@@ -40,13 +41,17 @@ namespace ModernCalculator
             this.btn9 = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
             this.btnVirg = new System.Windows.Forms.Button();
-            this.btnRD = new System.Windows.Forms.Button();
-            this.btnMult = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnSen = new System.Windows.Forms.Button();
             this.btnRaiz = new System.Windows.Forms.Button();
+            this.btnMult = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btnRD = new System.Windows.Forms.Button();
             this.tblLateral = new System.Windows.Forms.TableLayoutPanel();
             this.btn0 = new System.Windows.Forms.Button();
             this.btnResult = new System.Windows.Forms.Button();
@@ -57,6 +62,9 @@ namespace ModernCalculator
             this.pnlDisplay = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.Max = new System.Windows.Forms.Label();
+            this.Min = new System.Windows.Forms.Label();
+            this.Fechar = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tblLateral.SuspendLayout();
             this.pnlDisplay.SuspendLayout();
@@ -64,12 +72,12 @@ namespace ModernCalculator
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.btn1, 0, 3);
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Controls.Add(this.btnSub, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btn4, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.btn5, 1, 2);
@@ -78,42 +86,29 @@ namespace ModernCalculator
             this.tableLayoutPanel1.Controls.Add(this.btn8, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn9, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnDiv, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnVirg, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnRD, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn2, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btn3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnSen, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnRaiz, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnMult, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button2, 4, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button3, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn2, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn1, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn3, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnSen, 4, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnVirg, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button4, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnRD, 3, 2);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 122);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(251, 361);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(264, 339);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
-            // 
-            // btn1
-            // 
-            this.btn1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn1.FlatAppearance.BorderSize = 0;
-            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn1.Location = new System.Drawing.Point(3, 258);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(56, 79);
-            this.btn1.TabIndex = 19;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btnNumerador_click);
             // 
             // btnSub
             // 
@@ -126,7 +121,7 @@ namespace ModernCalculator
             this.btnSub.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSub.Location = new System.Drawing.Point(3, 3);
             this.btnSub.Name = "btnSub";
-            this.btnSub.Size = new System.Drawing.Size(56, 79);
+            this.btnSub.Size = new System.Drawing.Size(46, 78);
             this.btnSub.TabIndex = 0;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = true;
@@ -141,9 +136,9 @@ namespace ModernCalculator
             this.btn4.FlatAppearance.BorderSize = 0;
             this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn4.Location = new System.Drawing.Point(3, 173);
+            this.btn4.Location = new System.Drawing.Point(3, 171);
             this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(56, 79);
+            this.btn4.Size = new System.Drawing.Size(46, 78);
             this.btn4.TabIndex = 4;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
@@ -158,9 +153,9 @@ namespace ModernCalculator
             this.btn5.FlatAppearance.BorderSize = 0;
             this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn5.Location = new System.Drawing.Point(65, 173);
+            this.btn5.Location = new System.Drawing.Point(55, 171);
             this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(56, 79);
+            this.btn5.Size = new System.Drawing.Size(46, 78);
             this.btn5.TabIndex = 6;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
@@ -175,9 +170,9 @@ namespace ModernCalculator
             this.btn6.FlatAppearance.BorderSize = 0;
             this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn6.Location = new System.Drawing.Point(127, 173);
+            this.btn6.Location = new System.Drawing.Point(107, 171);
             this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(56, 79);
+            this.btn6.Size = new System.Drawing.Size(46, 78);
             this.btn6.TabIndex = 7;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
@@ -192,9 +187,9 @@ namespace ModernCalculator
             this.btn7.FlatAppearance.BorderSize = 0;
             this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn7.Location = new System.Drawing.Point(3, 88);
+            this.btn7.Location = new System.Drawing.Point(3, 87);
             this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(56, 79);
+            this.btn7.Size = new System.Drawing.Size(46, 78);
             this.btn7.TabIndex = 9;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
@@ -209,9 +204,9 @@ namespace ModernCalculator
             this.btn8.FlatAppearance.BorderSize = 0;
             this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn8.Location = new System.Drawing.Point(65, 88);
+            this.btn8.Location = new System.Drawing.Point(55, 87);
             this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(56, 79);
+            this.btn8.Size = new System.Drawing.Size(46, 78);
             this.btn8.TabIndex = 10;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
@@ -226,9 +221,9 @@ namespace ModernCalculator
             this.btn9.FlatAppearance.BorderSize = 0;
             this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn9.Location = new System.Drawing.Point(127, 88);
+            this.btn9.Location = new System.Drawing.Point(107, 87);
             this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(56, 79);
+            this.btn9.Size = new System.Drawing.Size(46, 78);
             this.btn9.TabIndex = 11;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
@@ -243,9 +238,9 @@ namespace ModernCalculator
             this.btnDiv.FlatAppearance.BorderSize = 0;
             this.btnDiv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiv.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiv.Location = new System.Drawing.Point(65, 3);
+            this.btnDiv.Location = new System.Drawing.Point(55, 3);
             this.btnDiv.Name = "btnDiv";
-            this.btnDiv.Size = new System.Drawing.Size(56, 79);
+            this.btnDiv.Size = new System.Drawing.Size(46, 78);
             this.btnDiv.TabIndex = 13;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
@@ -260,97 +255,13 @@ namespace ModernCalculator
             this.btnVirg.FlatAppearance.BorderSize = 0;
             this.btnVirg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVirg.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVirg.Location = new System.Drawing.Point(189, 173);
+            this.btnVirg.Location = new System.Drawing.Point(159, 255);
             this.btnVirg.Name = "btnVirg";
-            this.btnVirg.Size = new System.Drawing.Size(59, 79);
+            this.btnVirg.Size = new System.Drawing.Size(46, 81);
             this.btnVirg.TabIndex = 16;
             this.btnVirg.Text = ",";
             this.btnVirg.UseVisualStyleBackColor = true;
             this.btnVirg.Click += new System.EventHandler(this.btnVirg_Click);
-            // 
-            // btnRD
-            // 
-            this.btnRD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRD.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRD.FlatAppearance.BorderSize = 0;
-            this.btnRD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRD.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRD.Location = new System.Drawing.Point(189, 88);
-            this.btnRD.Name = "btnRD";
-            this.btnRD.Size = new System.Drawing.Size(59, 79);
-            this.btnRD.TabIndex = 15;
-            this.btnRD.Text = "%";
-            this.btnRD.UseVisualStyleBackColor = true;
-            this.btnRD.Click += new System.EventHandler(this.btnRD_click);
-            // 
-            // btnMult
-            // 
-            this.btnMult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMult.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMult.FlatAppearance.BorderSize = 0;
-            this.btnMult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMult.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMult.Location = new System.Drawing.Point(127, 3);
-            this.btnMult.Name = "btnMult";
-            this.btnMult.Size = new System.Drawing.Size(56, 79);
-            this.btnMult.TabIndex = 14;
-            this.btnMult.Text = "x";
-            this.btnMult.UseVisualStyleBackColor = true;
-            this.btnMult.Click += new System.EventHandler(this.btnMult_click);
-            // 
-            // btn2
-            // 
-            this.btn2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn2.FlatAppearance.BorderSize = 0;
-            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn2.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn2.Location = new System.Drawing.Point(65, 258);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(56, 79);
-            this.btn2.TabIndex = 5;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btnNumerador_click);
-            // 
-            // btn3
-            // 
-            this.btn3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn3.FlatAppearance.BorderSize = 0;
-            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn3.Location = new System.Drawing.Point(127, 258);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(56, 79);
-            this.btn3.TabIndex = 3;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.Click += new System.EventHandler(this.btnNumerador_click);
-            // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(3, 343);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 15);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "9";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // btnSen
             // 
@@ -360,10 +271,10 @@ namespace ModernCalculator
             this.btnSen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSen.FlatAppearance.BorderSize = 0;
             this.btnSen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSen.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSen.Location = new System.Drawing.Point(189, 258);
+            this.btnSen.Font = new System.Drawing.Font("Open Sans", 9.25F, System.Drawing.FontStyle.Bold);
+            this.btnSen.Location = new System.Drawing.Point(211, 255);
             this.btnSen.Name = "btnSen";
-            this.btnSen.Size = new System.Drawing.Size(59, 79);
+            this.btnSen.Size = new System.Drawing.Size(50, 81);
             this.btnSen.TabIndex = 1;
             this.btnSen.Text = "Sen";
             this.btnSen.UseVisualStyleBackColor = true;
@@ -375,13 +286,156 @@ namespace ModernCalculator
             this.btnRaiz.FlatAppearance.BorderSize = 0;
             this.btnRaiz.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRaiz.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRaiz.Location = new System.Drawing.Point(189, 3);
+            this.btnRaiz.Location = new System.Drawing.Point(159, 3);
             this.btnRaiz.Name = "btnRaiz";
-            this.btnRaiz.Size = new System.Drawing.Size(59, 79);
+            this.btnRaiz.Size = new System.Drawing.Size(46, 78);
             this.btnRaiz.TabIndex = 14;
             this.btnRaiz.Text = "√";
             this.btnRaiz.UseVisualStyleBackColor = true;
             this.btnRaiz.Click += new System.EventHandler(this.btnRaiz_click);
+            // 
+            // btnMult
+            // 
+            this.btnMult.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMult.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMult.FlatAppearance.BorderSize = 0;
+            this.btnMult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMult.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMult.Location = new System.Drawing.Point(107, 3);
+            this.btnMult.Name = "btnMult";
+            this.btnMult.Size = new System.Drawing.Size(46, 78);
+            this.btnMult.TabIndex = 14;
+            this.btnMult.Text = "x";
+            this.btnMult.UseVisualStyleBackColor = true;
+            this.btnMult.Click += new System.EventHandler(this.btnMult_click);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Open Sans", 9.25F, System.Drawing.FontStyle.Bold);
+            this.button2.Location = new System.Drawing.Point(211, 171);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(46, 78);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Tan";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.btn_tang_Click);
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(159, 87);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(46, 78);
+            this.button4.TabIndex = 18;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Open Sans", 9.25F, System.Drawing.FontStyle.Bold);
+            this.button3.Location = new System.Drawing.Point(211, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(46, 78);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "Del";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Del_Click);
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Open Sans", 9.25F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(211, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(46, 78);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Cos";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.btnCos_Click);
+            // 
+            // btn3
+            // 
+            this.btn3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn3.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Location = new System.Drawing.Point(107, 255);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(46, 81);
+            this.btn3.TabIndex = 3;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btnNumerador_click);
+            // 
+            // btn2
+            // 
+            this.btn2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn2.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Location = new System.Drawing.Point(55, 255);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(46, 81);
+            this.btn2.TabIndex = 5;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btnNumerador_click);
+            // 
+            // btn1
+            // 
+            this.btn1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn1.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Location = new System.Drawing.Point(3, 255);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(46, 81);
+            this.btn1.TabIndex = 19;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = true;
+            this.btn1.Click += new System.EventHandler(this.btnNumerador_click);
+            this.btn1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.btn1_KeyPress);
+            // 
+            // btnRD
+            // 
+            this.btnRD.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRD.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRD.FlatAppearance.BorderSize = 0;
+            this.btnRD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRD.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRD.Location = new System.Drawing.Point(159, 171);
+            this.btnRD.Name = "btnRD";
+            this.btnRD.Size = new System.Drawing.Size(46, 78);
+            this.btnRD.TabIndex = 15;
+            this.btnRD.Text = "%";
+            this.btnRD.UseVisualStyleBackColor = true;
+            this.btnRD.Click += new System.EventHandler(this.btnRD_click);
             // 
             // tblLateral
             // 
@@ -398,14 +452,14 @@ namespace ModernCalculator
             this.tblLateral.Controls.Add(this.btnResult, 0, 2);
             this.tblLateral.Controls.Add(this.btnSoma, 0, 1);
             this.tblLateral.Controls.Add(this.btnC, 0, 0);
-            this.tblLateral.Location = new System.Drawing.Point(250, 122);
+            this.tblLateral.Location = new System.Drawing.Point(267, 122);
             this.tblLateral.Name = "tblLateral";
             this.tblLateral.RowCount = 4;
             this.tblLateral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tblLateral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25.07375F));
             this.tblLateral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 24.48378F));
             this.tblLateral.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tblLateral.Size = new System.Drawing.Size(82, 339);
+            this.tblLateral.Size = new System.Drawing.Size(65, 339);
             this.tblLateral.TabIndex = 2;
             // 
             // btn0
@@ -419,7 +473,7 @@ namespace ModernCalculator
             this.btn0.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn0.Location = new System.Drawing.Point(3, 256);
             this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(76, 80);
+            this.btn0.Size = new System.Drawing.Size(59, 80);
             this.btn0.TabIndex = 18;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
@@ -436,7 +490,7 @@ namespace ModernCalculator
             this.btnResult.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResult.Location = new System.Drawing.Point(3, 173);
             this.btnResult.Name = "btnResult";
-            this.btnResult.Size = new System.Drawing.Size(76, 77);
+            this.btnResult.Size = new System.Drawing.Size(59, 77);
             this.btnResult.TabIndex = 17;
             this.btnResult.Text = "=";
             this.btnResult.UseVisualStyleBackColor = true;
@@ -453,7 +507,7 @@ namespace ModernCalculator
             this.btnSoma.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSoma.Location = new System.Drawing.Point(3, 88);
             this.btnSoma.Name = "btnSoma";
-            this.btnSoma.Size = new System.Drawing.Size(76, 79);
+            this.btnSoma.Size = new System.Drawing.Size(59, 79);
             this.btnSoma.TabIndex = 16;
             this.btnSoma.Text = "+";
             this.btnSoma.UseVisualStyleBackColor = true;
@@ -470,7 +524,7 @@ namespace ModernCalculator
             this.btnC.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnC.Location = new System.Drawing.Point(3, 3);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(76, 79);
+            this.btnC.Size = new System.Drawing.Size(59, 79);
             this.btnC.TabIndex = 15;
             this.btnC.Text = "C";
             this.btnC.UseVisualStyleBackColor = true;
@@ -539,11 +593,47 @@ namespace ModernCalculator
             this.label2.Size = new System.Drawing.Size(0, 46);
             this.label2.TabIndex = 2;
             // 
+            // Max
+            // 
+            this.Max.AutoSize = true;
+            this.Max.Image = ((System.Drawing.Image)(resources.GetObject("Max.Image")));
+            this.Max.Location = new System.Drawing.Point(297, 3);
+            this.Max.Name = "Max";
+            this.Max.Size = new System.Drawing.Size(13, 13);
+            this.Max.TabIndex = 4;
+            this.Max.Text = "  ";
+            this.Max.Click += new System.EventHandler(this.max_click);
+            // 
+            // Min
+            // 
+            this.Min.AutoSize = true;
+            this.Min.Image = ((System.Drawing.Image)(resources.GetObject("Min.Image")));
+            this.Min.Location = new System.Drawing.Point(313, 3);
+            this.Min.Name = "Min";
+            this.Min.Size = new System.Drawing.Size(16, 13);
+            this.Min.TabIndex = 5;
+            this.Min.Text = "   ";
+            this.Min.Click += new System.EventHandler(this.min_click);
+            // 
+            // Fechar
+            // 
+            this.Fechar.AutoSize = true;
+            this.Fechar.Image = ((System.Drawing.Image)(resources.GetObject("Fechar.Image")));
+            this.Fechar.Location = new System.Drawing.Point(278, 3);
+            this.Fechar.Name = "Fechar";
+            this.Fechar.Size = new System.Drawing.Size(13, 13);
+            this.Fechar.TabIndex = 6;
+            this.Fechar.Text = "  ";
+            this.Fechar.Click += new System.EventHandler(this.fechar_click);
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(332, 461);
+            this.Controls.Add(this.Fechar);
+            this.Controls.Add(this.Min);
+            this.Controls.Add(this.Max);
             this.Controls.Add(this.pnlDisplay);
             this.Controls.Add(this.tblLateral);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -551,11 +641,13 @@ namespace ModernCalculator
             this.Name = "Calculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calculadora";
+            this.Load += new System.EventHandler(this.Calculator_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tblLateral.ResumeLayout(false);
             this.pnlDisplay.ResumeLayout(false);
             this.pnlDisplay.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -589,6 +681,12 @@ namespace ModernCalculator
         private System.Windows.Forms.Button btnRD;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnRaiz;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label Max;
+        private System.Windows.Forms.Label Min;
+        private System.Windows.Forms.Label Fechar;
     }
 }
 
