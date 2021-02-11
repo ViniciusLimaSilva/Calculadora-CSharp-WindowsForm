@@ -1,16 +1,16 @@
 ## **Calculadora WindowsForm para cálculos diversos ** :cowboy_hat_face::desktop_computer:
 
-![Screen](https://user-images.githubusercontent.com/45276630/107376317-83130f80-6ac8-11eb-8e3d-53a21efa652d.png)
+![Screen](https://user-images.githubusercontent.com/45276630/107600111-852cb980-6c01-11eb-8e5c-738f060ceb8a.png)
 
 
 
 
 
-## *Em fase de desenvolvimento*
+## *:heavy_check_mark: Completa* :heavy_check_mark:
 
-#### Apresentando Bugs!! :warning::warning:
+#### 
 
-## *Código sendo feito totalmente em C# com WindowsForm*
+## *Código feito totalmente em C# com WindowsForm*
 
 ### Funções
 
@@ -21,6 +21,9 @@
 5. Raiz Quadrada
 6. Sin, Cos e Tan
 7. Função Del
+8. Hex, Dec, Oct, Bin
+9. PI
+10. Resto de Divisão
 
 ### Funções a serem implementadas
 
@@ -28,15 +31,12 @@
 - [x] Multiplicar
 - [x] Dividir
 - [x] Subtrair
-- [ ] Delta/Baskara
 - [x] Raiz Quadrada
-- [ ] Notação Ciêntifica
-- [ ] PI
-- [ ] Exp
-- [ ] Log
+- [x] PI
+- [x] Log
 - [x] Sin, Cos, Tan
-- [ ] Hex, Dec, Oct, Bin
-- [ ] Resto de Divisão
+- [x] Hex, Dec, Oct, Bin
+- [x] Resto de Divisão
 - [x] Botão de Min, Max and close personalizado
 
 ## *Para se Inspirar:*

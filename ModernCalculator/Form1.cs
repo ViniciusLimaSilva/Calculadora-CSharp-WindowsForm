@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace ModernCalculator
 {
+
+
     public partial class Calculator : Form
     {
         
@@ -18,7 +20,9 @@ namespace ModernCalculator
         string operador;
         double a = 0;
         bool validar = false;
-    
+       
+     
+
 
 
 
@@ -27,7 +31,6 @@ namespace ModernCalculator
             InitializeComponent();
         }
 
-        
 
 
 
@@ -189,7 +192,13 @@ namespace ModernCalculator
                 label3.Text = label3.Text + txtValorDigitado.Text + "=";
                 txtValorDigitado.Text = Convert.ToString(a / Convert.ToSingle(txtValorDigitado.Text));
             }
-           
+            else if (operador == "%")
+            {
+                label3.Text = label3.Text + txtValorDigitado.Text + "=";
+                txtValorDigitado.Text = Convert.ToString(a % Convert.ToSingle(txtValorDigitado.Text));
+            }
+         
+
 
             label3.Text = "";
             
@@ -218,7 +227,23 @@ namespace ModernCalculator
 
         private void btnRD_click(object sender, EventArgs e)
         {
-          
+
+            if (validar == true)
+            {
+                a = a % Convert.ToDouble(txtValorDigitado.Text);
+                label3.Text = Convert.ToString(a) + "%";
+                txtValorDigitado.Text = "";
+                operador = "%";
+            }
+            else
+            {
+                label3.Text = txtValorDigitado.Text + btnRD.Text;
+                a = Convert.ToDouble(txtValorDigitado.Text);
+                txtValorDigitado.Text = "";
+                operador = "%";
+                validar = true;
+            }
+
         }
 
         private void btnSen_click(object sender, EventArgs e)
@@ -294,5 +319,89 @@ namespace ModernCalculator
         {
             this.Close();
         }
+
+        private void btnlog10_Click(object sender, EventArgs e)
+        {
+            Convert.ToString(txtValorDigitado.Text);
+            double Valor_Log = Math.Log10(Convert.ToDouble(txtValorDigitado.Text));
+            label3.Text = "Log10" + "(" + txtValorDigitado.Text + ")" + " = ";
+            txtValorDigitado.Text = Convert.ToString(Valor_Log);
+        }
+
+
+        private void btnPI_cick(object sender, EventArgs e)
+        {
+            txtValorDigitado.Text = Convert.ToString(Math.PI);
+        }
+
+        private void btn_hex_click(object sender, EventArgs e)
+        {
+
+            int resto;
+
+            Convert.ToString(txtValorDigitado.Text);
+
+            int num1 = Convert.ToInt32(txtValorDigitado.Text);
+
+            string result = string.Empty;
+            while (num1 > 0)
+            {
+                resto = num1 % 16;
+                num1 /= 16;
+                result = resto.ToString() + result;
+            }
+            txtValorDigitado.Text = Convert.ToString(result);
+
+        }
+
+        private void btnOct_click(object sender, EventArgs e)
+        {
+
+            int resto;
+
+            Convert.ToString(txtValorDigitado.Text);
+
+            int num1 = Convert.ToInt32(txtValorDigitado.Text);
+
+            string result = string.Empty;
+            while (num1 > 0)
+            {
+                resto = num1 % 8;
+                num1 /= 8;
+                result = resto.ToString() + result;
+            }
+            txtValorDigitado.Text = Convert.ToString(result);
+        }
+
+        private void btnBin_click(object sender, EventArgs e)
+        {
+          
+            int resto;
+
+            Convert.ToString(txtValorDigitado.Text);
+            
+            int num1 = Convert.ToInt32(txtValorDigitado.Text);
+  
+            string result = string.Empty;
+            while (num1 > 0)
+            {
+                resto = num1 % 2;
+                num1 /= 2;
+                result = resto.ToString() + result;
+            }
+            txtValorDigitado.Text = Convert.ToString(result);
+
+
+
+
+        }
+
+        private void btnE_click(object sender, EventArgs e)
+        {
+            txtValorDigitado.Text = "2.71828182845";
+
+        }
+
+        
     }
 }
