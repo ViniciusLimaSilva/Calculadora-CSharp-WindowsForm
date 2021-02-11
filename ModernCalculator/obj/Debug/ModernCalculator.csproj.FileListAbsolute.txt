@@ -8,3 +8,7 @@ C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\obj\Debug
 C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\obj\Debug\ModernCalculator.exe
 C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\obj\Debug\ModernCalculator.pdb
 C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\obj\Debug\ModernCalculator.Calculator.resources
+C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\bin\Debug\ModernCalculator.exe.manifest
+C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\bin\Debug\ModernCalculator.application
+C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\obj\Debug\ModernCalculator.exe.manifest
+C:\Users\vini-\Desktop\exercicios c#\ModernCalculator\ModernCalculator\obj\Debug\ModernCalculator.application

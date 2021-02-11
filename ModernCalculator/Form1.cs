@@ -31,7 +31,14 @@ namespace ModernCalculator
             InitializeComponent();
         }
 
+        // DESENVOLVIDO POR : VINICIUS ANTÔNIO
+        // https://www.linkedin.com/in/vinicius-ant%C3%B4nio-lima-da-silva-b54614171/
 
+        /*
+        Copyright(c) 2021 vinicius Antônio
+        All Rights Reserved
+
+        */
 
 
 
@@ -402,6 +409,22 @@ namespace ModernCalculator
 
         }
 
-        
+
+        // função para poder mover o Form mesmo que o FormBorderStyle estaka setado em None
+        protected override void WndProc(ref Message m)
+        {
+            switch (m.Msg)
+            {
+                case 0x84:
+                    base.WndProc(ref m);
+                    if ((int)m.Result == 0x1)
+                        m.Result = (IntPtr)0x2;
+                    return;
+            }
+
+            base.WndProc(ref m);
+        }
+
+
     }
 }
